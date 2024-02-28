@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eminem</title>
+    <link rel="stylesheet" href="eminem.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Eminem</h1>
+        <script>
+            var titulo = document.getElementById("titulo");
+            var interval = setInterval(function() {
+                titulo.style.marginLeft = (titulo.offsetLeft + 1) + "px";
+                if (titulo.offsetLeft > window.innerWidth) {
+                    titulo.style.marginLeft = 0;
+                }
+            }, 1000);
+        </script>
+        <img src="logoEminem.jpg" alt="Eminem logo">
+    </header>
+    <main>
+        <section class="musica">
+            <h2>Música</h2>
+            <ul class="albumes">
+                <li><a href="https://open.spotify.com/intl-es/track/3KdSCWeLG7wZcOL9vYQDuz">Infinite</a></li>
+                <li><a href="https://open.spotify.com/intl-es/track/3KdSCWeLG7wZcOL9vYQDuz">The Slim Shady LP</a></li>
+                <li><a href="https://udiscover.mx/blogs/news/eminem-volvio-a-su-cima-creativa-en-the-marshall-mathers-lp-2">The Marshall Mathers LP</a></li>
+                <li><a href="https://www.last.fm/es/music/Eminem/+albums">The Eminem Show</a></li>
+                <li><a href="https://www.last.fm/es/music/Eminem/+albums">Encore</a></li>
+                <li><a href="https://www.last.fm/es/music/Eminem/Kamikaze">Relapse</a></li>
+                <li><a href="https://udiscover.mx/blogs/news/clasicos-de-eminem-que-no-pueden-faltar">Recovery</a></li>
+                <li><a href="https://udiscover.mx/blogs/news/clasicos-de-eminem-que-no-pueden-faltar">The Marshall Mathers LP 2</a></li>
+                <li><a href="https://udiscover.mx/blogs/news/clasicos-de-eminem-que-no-pueden-faltar">Revival</a></li>
+                <li><a href="https://www.last.fm/es/music/Eminem/Kamikaze">Kamikaze</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Music_to_Be_Murdered_By">Music to Be Murdered By</a></li>
+            </ul>
+            <ul class="canciones">
+                <li>
+                    <button onclick="playAudio('LoseYour.mp3')">Lose Yourself</button>
+                    <audio id="lose_yourself" controls>
+                        <source src="LoseYour.mp3" type="audio/mpeg">
+                    </audio>
+                </li>
+                <li>
+                    <button onclick="playAudio('stan.mp3')">Stan</button>
+                    <audio id="stan" controls>
+                        <source src="stan.mp3" type="audio/mpeg">
+                    </audio>
+                </li>
+                <li>
+                    <button onclick="playAudio('rap.mp3')">Rap God</button>
+                    <audio id="rap" controls>
+                        <source src="rap.mp3" type="audio/mpeg">
+                    </audio>
+                </li>
+                <li>
+                    <button onclick="playAudio('godzilla.mp3')">Godzilla</button>
+                    <audio id="godzilla" controls>
+                        <source src="godzilla.mp3" type="audio/mpeg">
+                    </audio>
+                </li>
+            </ul>
+        </section>
+        <section class="biografia">
+            <h2>Biografía</h2>
+            <p>Eminem nació en Detroit, Michigan, el 17 de octubre de 1972. ...</p>
+        </section>
+        <section class="premios">
+            <h2>Premios</h2>
+            <ul>
+                <li>15 Premios Grammy</li>
+                <li>8 Premios MTV Video Music Awards</li>
+                <li>1 Premio Oscar</li>
+            </ul>
+        </section>
+        <section class="noticias">
+            <h2>Noticias</h2>
+            <ul>
+                <li><a href="https://www.grammy.com/artists/eminem/8580">Eminem anuncia nuevo álbum</a></li>
+                <li><a href="https://www.grammy.com/artists/eminem/8580">Eminem gana premio Grammy</a></li>
+                <li><a href="https://shop.eminem.com/">Eminem se embarca en gira mundial</a></li>
+            </ul>
+        </section>
+        <section class="tienda">
+            <h2>Tienda</h2>
+            <ul>
+                <li><a href="https://shop.eminem.com/">Camisetas</a></li>
+                <li><a
+
+</html>
